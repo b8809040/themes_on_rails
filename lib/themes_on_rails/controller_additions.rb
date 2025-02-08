@@ -2,7 +2,8 @@ module ThemesOnRails
   module ControllerAdditions
     extend ActiveSupport::Concern
 
-    module ClassMethods
+    #module ClassMethods
+    class_methods do
       def theme(theme, options={})
         @_theme         = theme
         @_theme_options = options
